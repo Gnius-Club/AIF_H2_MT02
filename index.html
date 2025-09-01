@@ -1,276 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playbook — 2º Preparatoria — M02: Construcción de tu Primer Workflow</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión M02: Construcción de tu Primer Workflow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header hidden>
-    <h1><span class="book-icon">📋</span> <strong>Playbook Misión M02: Construcción de tu Primer Workflow</strong></h1>
-    <div class="header-widgets">
-      <div class="timer-container">
-        <span id="timer">⏱️ 00:00</span>
-        <button id="startStop">Start</button>
-        <button id="reset">Reset</button>
-      </div>
-      <div class="theme-toggle">
-        <i class="fas fa-sun"></i>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle-input">
-          <span class="slider round"></span>
-        </label>
-        <i class="fas fa-moon"></i>
-      </div>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión M02: Construcción de tu Primer Workflow</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión M02</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Comprender la interfaz de Make.com: Lienzo, Módulos y Historial de Ejecuciones.</li>
+                                        <li>Mapear datos entre módulos de Make.com arrastrando variables.</li>
+                                        <li>Diseñar y construir un escenario lineal básico en Make.com que conecte dos aplicaciones.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> 3 min</li>
+                                        <li><strong class="tactic-highlight">⚡“I Can Statement” + Desafío:</strong> 5-7 min</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> 10-12 min</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> 17-20 min</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> 5 min</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un escenario lineal funcional en Make.com, activado manualmente, que integre al menos dos aplicaciones de uso personal (e.g., Discord, correo, Trello, Google Calendar).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector e internet estable.</li>
+                                        <li>Cuentas de Make.com para cada estudiante.</li>
+                                        <li>Cuentas en servicios a conectar (ej. Discord, Gmail).</li>
+                                        <li>Presentación de Diapositivas (numeradas del 1 al 11).</li>
+                                        <li>Ejemplo de escenario funcional listo para la demostración.</li>
+                                    </ul>
+                                    <strong>Criterios de Calidad del Entregable:</strong>
+                                    <ul>
+                                        <li>Escenario lineal correctamente configurado en Make.com.</li>
+                                        <li>Uso adecuado de módulos para conectar al menos dos aplicaciones.</li>
+                                        <li>Mapeo de datos entre módulos funcional y lógico.</li>
+                                        <li>Activación manual del escenario exitosa.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
+                <p>Iniciamos la misión activando a nuestro copiloto IA y estableciendo el contexto del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y foco ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Presenta el tema y su valor práctico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Equipo, hoy nos adentraremos en la automatización de procesos. Aprenderemos a modelar flujos de trabajo eficientes y a conectar diferentes aplicaciones para que trabajen juntas, liberando tiempo y optimizando tareas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación con Xolo ⏰ 2 minutos</h3>
+                            <p>Cada estudiante inicia su sesión con Xolo para alinear el foco de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Como es nuestra rutina, activen a Xolo con su perfil e intereses. Confirmen que están en la Misión M02 y pídanle que su foco de hoy sea ayudarles a navegar Make.com, específicamente con la configuración de módulos y el mapeo de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
+                <p>Alinear expectativas y definir el reto práctico de la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presenta el reto ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Describe el reto del "Handshake Digital" y la meta observable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El reto de hoy es construir un 'Handshake Digital': un escenario lineal en Make.com que, al activarse manualmente, conecte dos de sus aplicaciones favoritas, como Discord y su correo. El criterio de éxito es que el flujo se ejecute sin errores y los datos se transfieran correctamente entre ambas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Escribe tu “I Can” ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Cada estudiante redacta su objetivo de aprendizaje personal.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Formulen su “Puedo…” en una frase. Por ejemplo: “Puedo diseñar y construir un escenario lineal en Make.com que conecte dos aplicaciones, mapeando datos entre ellas.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
+                <p>Formalizar los conceptos clave de la herramienta Make.com antes de la práctica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Marco del día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Introduce los componentes de Make.com: Lienzo, Módulos, Historial y Mapeo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy nos enfocaremos en la anatomía de Make.com: el Lienzo es nuestro espacio de trabajo; los Módulos son las apps que conectamos; y el Historial es clave para depurar. Un error común es no entender cómo fluyen los datos o ignorar el historial. Eviten esto prestando atención al mapeo de datos y revisando cada ejecución.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Mini-demostración ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Modela en vivo el proceso de arrastrar, conectar y mapear módulos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Observen cómo arrastro y conecto los módulos en el Lienzo, y cómo selecciono las variables para mapear datos. Fíjense que cada paso se ilumina en verde al ejecutar y que el historial muestra los datos transferidos. Este es el ciclo que seguirán.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Check rápido ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Verifica comprensión con dos preguntas clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Pregunta 1: ¿Cuál es la función principal del Historial de Ejecuciones? (Respuesta: Depurar y ver qué falló). Pregunta 2: ¿Cómo se transfieren datos de un módulo a otro? (Respuesta: Mapeando las variables).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
+                <p>Fase de producción guiada por IA para construir el workflow, reconociendo su complejidad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Setup y Conexión de Módulos ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 8 - debe mostrar el lienzo de Make.com) Inicia sesión, crea un escenario y conecta las cuentas. (Nota: La conexión de cuentas vía OAuth puede tomar tiempo y presentar errores).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Comencemos. Inicien sesión en Make.com y creen un nuevo escenario. El primer gran paso es añadir sus módulos y conectar sus cuentas. Esto puede implicar pop-ups de autenticación. Tómense su tiempo. Si encuentran un error, describan el problema a Xolo y pídanle una guía paso a paso para solucionarlo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Mapeo de Datos y Prueba Inicial ⏰ 9 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Enfócate en el núcleo de la lección: transferir datos entre los módulos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, el núcleo: mapear los datos. Arrastren las variables del primer módulo a los campos del segundo. Si no están seguros de qué variable usar, consulten a Xolo: 'Xolo, quiero que el contenido de mi mensaje de Discord sea el cuerpo del correo en Gmail. ¿Qué variable debo mapear?'. Luego, ejecuten su escenario. No se preocupen si falla, es parte del proceso. Revisen el historial y depuren.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Documentación y Evidencia ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Solicita la evidencia final del proceso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para la entrega, preparen el enlace a su escenario de Make.com y tomen una captura de pantalla del historial de ejecución, incluso si muestra un error. Lo importante es la evidencia de su trabajo. Nombren su entrega: M02_Workflow_[SuNombre].</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
+                <p>Exhibir el proceso y los aprendizajes, no solo los resultados perfectos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Showcase de Proceso ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) 2–3 estudiantes comparten su pantalla y su experiencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos a compartir. No se enfoquen en si funcionó o no. Muéstrennos su escenario y cuéntennos: ¿Cuál fue el mayor desafío que encontraron? ¿En qué parte del proceso se quedaron atascados? Vamos a analizarlo juntos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre Ejecutivo ⏰ 2 minutos</h3>
+                            <p>Síntesis final del aprendizaje clave y siguientes pasos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Síntesis: Hoy aprendimos que construir automatizaciones es un proceso iterativo de diseño, prueba y depuración. El criterio clave no fue el éxito inmediato, sino la habilidad para diagnosticar un problema usando el historial. Siguiente paso: Identifiquen otra tarea repetitiva en su vida y simplemente esbocen en papel los módulos que necesitarían para automatizarla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </header>
-  <div class="main-container">
-    <aside class="activity-list">
-      <h2>Actividades</h2>
-      <ul>
-        <li><a href="#activity-0">📝</a></li>
-        <li><a href="#activity-1">1</a></li>
-        <li><a href="#activity-2">2</a></li>
-        <li><a href="#activity-3">3</a></li>
-        <li><a href="#activity-4">4</a></li>
-        <li><a href="#activity-5">5</a></li>
-      </ul>
-      <div class="sidebar-info">
-        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-      </div>
-    </aside>
-    <main class="content">
-      <div class="progress-bar" hidden>
-        <div class="progress"></div>
-      </div>
-      <button id="toggle-dialogues" hidden>Mostrar todos los diálogos</button>
-      <section class="activity-card" id="activity-0">
-        <h2 class="activity-title">📝 De un Vistazo: Misión M02: Construcción de tu Primer Workflow</h2>
-        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-        <div class="overview">
-          <section class="overview-block">
-            <h3>Objetivos e “I Can”</h3>
-            <ul>
-              <li>Comprender la interfaz de Make.com: Lienzo, Módulos y Historial de Ejecuciones.</li>
-              <li>Mapear datos entre módulos de Make.com arrastrando variables.</li>
-              <li>Diseñar y construir un escenario lineal básico en Make.com que conecte dos aplicaciones.</li>
-            </ul>
-          </section>
-          <section class="overview-block">
-            <h3>Secuencia y tiempos</h3>
-            <ol>
-              <li>Saludo Interactivo con IA — 3 min</li>
-              <li>“I Can” + Desafío — 5–7 min</li>
-              <li>AI GYM — 10–12 min</li>
-              <li>Brain Spark — 17–20 min</li>
-              <li>GNIUS STORM — 5 min</li>
-            </ol>
-          </section>
-          <section class="overview-block">
-            <h3>Entregable del Micro-Proyecto</h3>
-            <ul>
-              <li>Un escenario lineal funcional en Make.com, activado manualmente, que integre al menos dos aplicaciones de uso personal (e.g., Discord, correo, Trello, Google Calendar).</li>
-            </ul>
-          </section>
-          <section class="overview-block">
-            <h3>Criterios de calidad</h3>
-            <ul>
-              <li>Escenario lineal correctamente configurado en Make.com.</li>
-              <li>Uso adecuado de módulos para conectar al menos dos aplicaciones.</li>
-              <li>Mapeo de datos entre módulos funcional y lógico.</li>
-              <li>Activación manual del escenario exitosa.</li>
-            </ul>
-          </section>
-          <section class="overview-block">
-            <h3>Materiales y preparación</h3>
-            <ul>
-              <li>Proyector e internet</li>
-              <li>Make.com</li>
-              <li>Ejemplo mínimo de escenario lineal en Make.com listo.</li>
-            </ul>
-          </section>
-        </div>
-      </section>
-      <section class="activity-card" id="activity-1">
-        <h2 class="activity-title">Saludo Interactivo con IA</h2>
-        <p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-              <p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y su valor profesional según la Columna 1.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Equipo, hoy nos adentraremos en la automatización de procesos. Aprenderemos a modelar flujos de trabajo eficientes y a conectar diferentes aplicaciones para que trabajen juntas, liberando tiempo y optimizando tareas.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-              <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Misión [número/nombre]. Necesito foco en [marco/herramienta].”</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas. Hoy, su foco debe ser Make.com y cómo usar sus módulos y lienzo.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="activity-card" id="activity-2">
-        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
-        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
-              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto y la meta observable, derivados de Columna 1 y 3.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">El reto de hoy es construir un 'Handshake Digital': un escenario lineal en Make.com que, al activarse manualmente, conecte dos de sus aplicaciones favoritas, como Discord y su correo, o Trello y Google Calendar. El criterio de éxito es que el flujo se ejecute sin errores y los datos se transfieran correctamente entre ambas.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-              <p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” concreto alineado al entregable de Columna 2.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Ej.: “Puedo diseñar y construir un escenario lineal en Make.com que conecte dos aplicaciones, mapeando datos entre ellas.”</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="activity-card" id="activity-3">
-        <h2 class="activity-title">AI GYM</h2>
-        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Marco del día</h3>
-              <p class="step-instructions">Proyectar Diapositiva 5. Introduce el marco según Columna 3 (Make.com: Lienzo, Módulos, Historial de Ejecuciones y mapeo de datos).</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Hoy formalizaremos el uso de Make.com, centrándonos en su Lienzo, Módulos y el Historial de Ejecuciones. Un error común es no entender cómo fluyen los datos entre módulos o ignorar el historial para depurar. Eviten esto prestando atención al mapeo de datos y revisando cada ejecución.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
-              <p class="step-instructions">Proyectar Diapositiva 6. Construye ejemplo mínimo alineado a las tres columnas del input.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Observen cómo se arrastran y conectan los módulos en el Lienzo, y cómo se seleccionan las variables para mapear datos. Verifiquen que cada paso se ilumine en verde al ejecutar y que el historial muestre los datos transferidos.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Check rápido</h3>
-              <p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Pregunta 1: ¿Cuál es la función principal del Historial de Ejecuciones en Make.com? Pregunta 2: ¿Cómo se transfieren datos de un módulo a otro en el Lienzo?</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="activity-card" id="activity-4">
-        <h2 class="activity-title">Brain Spark</h2>
-        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Producción</h3>
-              <p class="step-instructions">Proyectar Diapositiva 8. Indica el producto específico (Columna 2) y un checklist de calidad (Columna 3). Tiempo de trabajo autónomo.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">N/A</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Iteración</h3>
-              <p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta basada en criterios del marco.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Antes de cerrar: valida que el mapeo de datos sea preciso y que la información fluya como esperas. Si no se cumple, ajusta y vuelve a probar la ejecución.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Evidencia</h3>
-              <p class="step-instructions">Proyectar Diapositiva 10. Solicita evidencia: enlace al escenario de Make.com y capturas de pantalla del historial de ejecución mostrando los datos transferidos exitosamente.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Entrega con nombre: M02_Workflow_[Equipo/Nombre]. Incluye el enlace de Make.com y capturas de pantalla del historial de ejecución que demuestren el éxito.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="activity-card" id="activity-5">
-        <h2 class="activity-title">GNIUS STORM</h2>
-        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-              <p class="step-instructions">2–3 presentaciones de 30–45 s, centradas en evidencia y criterio.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Enfoca tu presentación en decisión clave, evidencia y justificación de criterio.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-              <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje, 1 criterio de mayor impacto y 1 siguiente paso fuera del aula.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Síntesis: La importancia de visualizar el flujo de datos en el Lienzo de Make.com. Criterio clave: El mapeo correcto de datos entre módulos fue crucial para el éxito del escenario. Siguiente paso aplicado: Identificar una tarea repetitiva en su vida diaria y diseñar un micro-workflow en Make.com para automatizarla.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
